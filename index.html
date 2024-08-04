@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!--use of css for give better look-->
+<style>
+body{
+    font-family: Arial,helvetica, sans-serif;
+    margin: 100px;
+    padding:100px;
+    background-image: url('groot.png');
+    background-size:cover;
+} 
+h2{
+    font-size:40px;
+    text-align:center;
+    color:#f5fd1a;
+    animation:puls 1.5s infinite;
+}
+.contectFrom{
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(2, 236, 253);
+    backdrop-filter: blue(10px);
+    background:rgba(225,225,225,0.207);
+}
+label{
+    display:black;
+    margin-bottom: 5px;
+}
+input,textarea{ 
+    width:40%;
+    padding:10px;
+    margin-bottom: 10px;
+    border:1px solid #60ecf6;
+    border-radius:5px;
+    background-color:rgba(225,225,225);
+}
+button{
+    padding:10px 20px;
+    background-color:#f5f847;
+    color:#040404;
+    border:none;
+    border-radius:5px;
+    cursor: pointer;   
+}
+button:hover{
+    background-color:#f5f847;
+}
+</style>
+<!--UI of program using html-->
+<body>
+    <div class="contectFrom">
+        <h2> Login Page</h2>
+        <form id="contectForm" onsubmit="submitForm(event)">
+        <lebel for="name">Name:</lebel>
+        <input type="text"id="name" name="name" required><br>
+
+        <lebel for="email">Email:</lebel>
+        <input type="email"id="email" name="email" required><br>
+
+        <lebel for="message">Message:</lebel>
+        <input type="message"id="message" name="message" required></br>
+        <button type="submit">Submit</button><br>
+        </form>        
+    </div> 
+    <script src="script.js"></script>
+</body>
+</html>
